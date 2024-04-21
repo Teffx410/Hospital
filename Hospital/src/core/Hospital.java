@@ -101,7 +101,7 @@ public class Hospital {
     public void relationAppoiments() {
         for (Ward ward : this.wards) {
             for (Patient patient : ward.getPatients()) {
-                System.out.println("Patient " + patient.getId() + " has " + patient.getAppoiments().size());
+                System.out.println("Patient " + patient.getId() + " has " + patient.getAppoiments().size()+ " appoiments");
                 for (Appoiment appoiment : patient.getAppoiments()) {
                     System.out.println("Patient " + patient.getId() + " has  an appoiment with the doctor " + appoiment.getDoctor().getId());
                 }
